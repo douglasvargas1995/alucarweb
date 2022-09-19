@@ -13,7 +13,7 @@ $ sudo apt install docker-compose
 
 # Sistema
 ## Clone
-$ git clone ....
+$ git clone https://github.com/douglasvargas1995/alucarweb.git
 
 ## Depois de baixar o projeto, acesse a pasta e instale as dependências necessárias
 $ composer install
