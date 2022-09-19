@@ -21,44 +21,36 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+# Instalação das tecnologias utilizadas
+## PHP
+$ sudo apt install php php-xml php-pgsql
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Composer
+$ sudo apt install composer
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Docker Compose(Opcional)
+$ sudo apt install docker-compose
 
-## Laravel Sponsors
+# Sistema
+## Clone
+$ git clone https://github.com/douglasvargas1995/alucarweb.git
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Depois de baixar o projeto, acesse a pasta e instale as dependências necessárias
+$ composer install
 
-### Premium Partners
+Para acessar o banco, crie uma cópia do arquivo .env e configure a conexão.\
+Utilizei migration para o banco de dados, mas caso seja necessário, o script com o sql está na pasta <i>database</i> e também estou anexando o arquivo no email.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
 
-## Contributing
+## Executar as migrations(Opcional)
+$ php artisan migrate
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Gerar chave necessária para executar o sistema
+$ php artisan key:generate
 
-## Code of Conduct
+## Executar o sistema 
+$ sudo php artisan serve
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+# Observações
+Para acessar o sistema, utilize o caminho //localhost/alucar/public que apresenta uma opção de login ou um novo registro no canto superior direito da tela.
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
